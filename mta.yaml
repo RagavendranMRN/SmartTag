@@ -4,15 +4,7 @@ parameters:
   deploy_mode: html5-repo
 version: 0.0.1
 modules:
-  - name: mta-smarttag2-approuter
-    type: approuter.nodejs
-    path: mta-smarttag2-approuter
-    parameters:
-      disk-quota: 256M
-      memory: 256M
-    requires:
-      - name: mta_smarttag2_html5_repo_runtime
-      - name: uaa_mta_smarttag2
+ 
   - name: mta_smarttag2_ui_deployer
     type: com.sap.html5.application-content
     path: mta_smarttag2_ui_deployer
