@@ -1,0 +1,33 @@
+<edmx:Edmx Version="1.0" xmlns:edmx="http://schemas.microsoft.com/ado/2007/06/edmx">
+	<edmx:DataServices m:DataServiceVersion="1.0" xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata">
+		<Schema Namespace="lbncarrierinvoice" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+			<EntityType Name="CarrierInvoiceHeader">
+				<Key>
+					<PropertyRef Name="CarrierInvoiceGUID"/>
+				</Key>
+				<Property Name="CarrierInvoiceGUID" Type="Edm.String" Nullable="false" MaxLength="36" sap:filterable="false"
+					xmlns:sap="http://www.sap.com/Protocols/SAPData"/>
+				<Property Name="CarrierInvoiceID" Type="Edm.String" Nullable="false" MaxLength="35"/>
+				<Property Name="ChangedBy" Type="Edm.String" Nullable="true" MaxLength="254"/>
+				<Property Name="ChangedOn" Type="Edm.DateTime" Nullable="true"/>
+				<Property Name="CreatedBy" Type="Edm.String" Nullable="true" MaxLength="254"/>
+				<Property Name="CreatedOn" Type="Edm.DateTime" Nullable="true"/>
+				<Property Name="GrossAmount" Type="Edm.Decimal" Nullable="true" Precision="28" Scale="6" sap:unit="GrossAmountCurrency"
+					xmlns:sap="http://www.sap.com/Protocols/SAPData"/>
+				<Property Name="GrossAmountCurrency" Type="Edm.String" Nullable="true" MaxLength="3" sap:semantics="currency-code"
+					xmlns:sap="http://www.sap.com/Protocols/SAPData"/>
+				<Property Name="InvoiceDate" Type="Edm.DateTime" Nullable="true"/>
+				<Property Name="PurchasingParty" Type="Edm.String" Nullable="true" MaxLength="40" sap:filterable="false"
+					xmlns:sap="http://www.sap.com/Protocols/SAPData"/>
+				<Property Name="TaxAmount" Type="Edm.Decimal" Nullable="true" Precision="28" Scale="6" sap:unit="TaxAmountCurrency"
+					xmlns:sap="http://www.sap.com/Protocols/SAPData"/>
+				<Property Name="TaxAmountCurrency" Type="Edm.String" Nullable="true" MaxLength="3" sap:semantics="currency-code"
+					xmlns:sap="http://www.sap.com/Protocols/SAPData"/>
+				<Property Name="VendorID" Type="Edm.String" Nullable="true" MaxLength="14"/>
+			</EntityType>
+			<EntityContainer Name="lbncarrierinvoiceContainer" m:IsDefaultEntityContainer="true">
+				<EntitySet Name="CarrierInvoiceHeaders" EntityType="lbncarrierinvoice.CarrierInvoiceHeader"/>
+			</EntityContainer>
+		</Schema>
+	</edmx:DataServices>
+</edmx:Edmx>
