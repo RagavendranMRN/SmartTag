@@ -27,6 +27,21 @@
 		"sourceTemplate": {
 			"id": "html5moduletemplates.smartTemplateModule",
 			"version": "1.40.12"
+		},
+		"crossNavigation": {
+			"inbounds": {
+				"intent1": {
+					"signature": {
+						"parameters": {},
+						"additionalParameters": "allowed"
+					},
+					"semanticObject": "SmartTag",
+					"action": "Display",
+					"title": "{{appTitle}}",
+					"info": "{{draft}}",
+					"icon": "sap-icon://Fiori2/F0018"
+				}
+			}
 		}
 	},
 	"sap.ui": {
