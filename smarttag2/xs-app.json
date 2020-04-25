@@ -11,6 +11,11 @@
       "destination": "carrierinvoice",
       "service": "html5-apps-repo-rt",
       "authenticationType": "xsuaa"
+    },
+    {
+      "source": "^/odata/lbn-carrierinvoice-service(.*)$",
+      "target": "/odata/lbn-carrierinvoice-service/$1",
+      "destination": "carrierinvoice"
     }
   ]
 }
