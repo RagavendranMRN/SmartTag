@@ -15,7 +15,7 @@
     {
       "source": "^/odata/lbn-carrierinvoice-service(.*)$",
       "target": "/odata/lbn-carrierinvoice-service/$1",
-      "destination": "carrierinvoice"
+      "destination": "tagconsumerbackend"
     }
   ]
 }
