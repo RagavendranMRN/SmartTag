@@ -16,7 +16,7 @@
 		"resources": "resources.json",
 		"dataSources": {
 			"mainService": {
-				"uri": "/here/goes/your/serviceurl/",
+				"uri": "/odata/lbn-carrierinvoice-service",
 				"type": "OData",
 				"settings": {
 					"localUri": "localService/metadata.xml"
